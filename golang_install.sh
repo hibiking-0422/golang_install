@@ -5,16 +5,14 @@ $ bash <(curl -s https://raw.githubusercontent.com/hibiking-0422/golang_install/
 commentout
 
 #golang install
-curl -L -O https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
+wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
 
 #解凍
-sudo tar -C /usr/local -xf go1.13.5.linux-amd64.tar.gz
+tar -xzf go1.13.5.linux-amd64.tar.gz
 
-#path
-echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bash_profile
+#/usr/local/srcに移動
+sudo mv go /usr/local/src
 
-#goget install ,リポジトリのやつ
-sudo yum install -y git mercurial subversion
-
-#path
-echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> ~/.bash_profile
+#path通す
+echo 'export GOROOT="/usr/local/src/go"' >> ~/.bash_profile
+echo 'export PATH="$GOROOT/bin:$PATH"' >> ~/.bash_profile
