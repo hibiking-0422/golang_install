@@ -8,7 +8,7 @@ commentout
 curl -L -O https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
 
 #解凍
-sudo tar -C /usr/local -xf go1.12.5.linux-amd64.tar.gz
+sudo tar -C /usr/local -xf go1.13.5.linux-amd64.tar.gz
 
 #path
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bash_profile
