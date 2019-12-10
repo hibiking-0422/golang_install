@@ -5,7 +5,7 @@ $ bash <(curl -s https://raw.githubusercontent.com/hibiking-0422/golang_install/
 commentout
 
 #golang install
-curl -L -O https://dl.google.com/go/go1.12.5.linux-amd64.tar.g
+curl -L -O https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
 
 #解凍
 sudo tar -C /usr/local -xf go1.12.5.linux-amd64.tar.gz
