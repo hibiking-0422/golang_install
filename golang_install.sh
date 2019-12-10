@@ -4,6 +4,9 @@
 $ bash <(curl -s https://raw.githubusercontent.com/hibiking-0422/golang_install/master/golang_install.sh)
 commentout
 
+#git install
+sudo yum -y install git
+
 #golang install
 wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
 
