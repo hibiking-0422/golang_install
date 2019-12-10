@@ -4,6 +4,9 @@
 $ bash <(curl -s https://raw.githubusercontent.com/hibiking-0422/golang_install/master/golang_install.sh)
 commentout
 
+#update
+sudo yum -y update
+
 #git install
 sudo yum -y install git
 
